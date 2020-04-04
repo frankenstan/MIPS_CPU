@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="751" delta="unknown" >"E:/newcpu3.0/CPU.v" Line 28: Redeclaration of ansi port <arg fmt="%s" index="1">a8R</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="751" delta="unknown" >"E:/newcpu3.0/CPU.v" Line 29: Redeclaration of ansi port <arg fmt="%s" index="1">a3R</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="751" delta="unknown" >"E:/newcpu3.0/CPU.v" Line 35: Redeclaration of ansi port <arg fmt="%s" index="1">a5</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="751" delta="unknown" >"E:/newcpu3.0/CPU.v" Line 37: Redeclaration of ansi port <arg fmt="%s" index="1">a0</arg> is not allowed
+</msg>
+
+</messages>
+
