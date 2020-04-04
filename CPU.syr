@@ -1,0 +1,912 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: CPU.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "CPU.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "CPU"
+Output Format                      : NGC
+Target Device                      : xc6slx45-3-csg484
+
+---- Source Options
+Top Module Name                    : CPU
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\newcpu3.0\Reg.v" into library work
+Parsing module <Reg>.
+Analyzing Verilog file "E:\newcpu3.0\PC.v" into library work
+Parsing module <PC>.
+Analyzing Verilog file "E:\newcpu3.0\Mux4_32.v" into library work
+Parsing module <Mux4_32>.
+Analyzing Verilog file "E:\newcpu3.0\Mux2_5.v" into library work
+Parsing module <Mux4_5>.
+Analyzing Verilog file "E:\newcpu3.0\Mux2_32.v" into library work
+Parsing module <Mux2_32>.
+Analyzing Verilog file "E:\newcpu3.0\memwb.v" into library work
+Parsing module <memwb>.
+Analyzing Verilog file "E:\newcpu3.0\IP_ROM.v" into library work
+Parsing module <IP_ROM>.
+Analyzing Verilog file "E:\newcpu3.0\IP_RAM.v" into library work
+Parsing module <IP_RAM>.
+Analyzing Verilog file "E:\newcpu3.0\ifid.v" into library work
+Parsing module <ifid>.
+Analyzing Verilog file "E:\newcpu3.0\idexe.v" into library work
+Parsing module <idexe>.
+Analyzing Verilog file "E:\newcpu3.0\forS.v" into library work
+Parsing module <forS>.
+Analyzing Verilog file "E:\newcpu3.0\forJ.v" into library work
+Parsing module <forJ>.
+Analyzing Verilog file "E:\newcpu3.0\forBranch.v" into library work
+Parsing module <forBranch>.
+Analyzing Verilog file "E:\newcpu3.0\Extender.v" into library work
+Parsing module <Extender>.
+Analyzing Verilog file "E:\newcpu3.0\exemem.v" into library work
+Parsing module <exemem>.
+Analyzing Verilog file "E:\newcpu3.0\ControlUnit.v" into library work
+Parsing module <ControlUnit>.
+Analyzing Verilog file "E:\newcpu3.0\ALU.v" into library work
+Parsing module <ALU>.
+Analyzing Verilog file "E:\newcpu3.0\CPU.v" into library work
+Parsing module <CPU>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <CPU>.
+
+Elaborating module <ControlUnit>.
+WARNING:HDLCompiler:413 - "E:\newcpu3.0\ControlUnit.v" Line 30: Result of 32-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "E:\newcpu3.0\ControlUnit.v" Line 34: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "E:\newcpu3.0\ControlUnit.v" Line 38: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "E:\newcpu3.0\ControlUnit.v" Line 39: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "E:\newcpu3.0\ControlUnit.v" Line 63: Result of 32-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "E:\newcpu3.0\ControlUnit.v" Line 72: Result of 32-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "E:\newcpu3.0\ControlUnit.v" Line 92: Result of 32-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "E:\newcpu3.0\ControlUnit.v" Line 104: Result of 32-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "E:\newcpu3.0\ControlUnit.v" Line 110: Result of 32-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "E:\newcpu3.0\ControlUnit.v" Line 118: Result of 32-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "E:\newcpu3.0\ControlUnit.v" Line 125: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "E:\newcpu3.0\ControlUnit.v" Line 127: Result of 32-bit expression is truncated to fit in 5-bit target.
+
+Elaborating module <PC>.
+
+Elaborating module <Mux4_32>.
+
+Elaborating module <IP_ROM>.
+
+Elaborating module <ifid>.
+
+Elaborating module <Reg>.
+
+Elaborating module <Mux4_5>.
+
+Elaborating module <forS>.
+
+Elaborating module <Extender>.
+
+Elaborating module <forJ>.
+
+Elaborating module <idexe>.
+
+Elaborating module <ALU>.
+WARNING:HDLCompiler:413 - "E:\newcpu3.0\ALU.v" Line 40: Result of 32-bit expression is truncated to fit in 1-bit target.
+
+Elaborating module <forBranch>.
+
+Elaborating module <exemem>.
+
+Elaborating module <IP_RAM>.
+
+Elaborating module <memwb>.
+
+Elaborating module <Mux2_32>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <CPU>.
+    Related source file is "E:\newcpu3.0\CPU.v".
+    Found 32-bit adder for signal <PC[31]_GND_1_o_add_2_OUT> created at line 50.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <CPU> synthesized.
+
+Synthesizing Unit <ControlUnit>.
+    Related source file is "E:\newcpu3.0\ControlUnit.v".
+WARNING:Xst:647 - Input <iiO<25:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ieO<19:10>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ieO<25:23>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <emO<9:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <emO<25:15>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <mwO<9:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <mwO<25:15>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 6-bit comparator greater for signal <iiO[31]_GND_2_o_LessThan_2_o> created at line 31
+    Found 6-bit comparator greater for signal <GND_2_o_iiO[31]_LessThan_3_o> created at line 32
+    Found 6-bit comparator greater for signal <iiO[31]_GND_2_o_LessThan_4_o> created at line 32
+    Found 6-bit comparator greater for signal <mwO[31]_GND_2_o_LessThan_8_o> created at line 34
+    Found 6-bit comparator greater for signal <iiO[31]_GND_2_o_LessThan_10_o> created at line 35
+    Found 6-bit comparator greater for signal <ieO[31]_GND_2_o_LessThan_96_o> created at line 72
+    Found 6-bit comparator greater for signal <mwO[31]_GND_2_o_LessThan_97_o> created at line 72
+    Found 5-bit comparator equal for signal <ieO[9]_mwO[14]_equal_98_o> created at line 72
+    Found 6-bit comparator greater for signal <GND_2_o_mwO[31]_LessThan_100_o> created at line 73
+    Found 5-bit comparator equal for signal <ieO[9]_mwO[4]_equal_102_o> created at line 73
+    Found 6-bit comparator greater for signal <emO[31]_GND_2_o_LessThan_129_o> created at line 81
+    Found 5-bit comparator equal for signal <ieO[9]_emO[14]_equal_130_o> created at line 81
+    Found 6-bit comparator greater for signal <GND_2_o_emO[31]_LessThan_132_o> created at line 82
+    Found 6-bit comparator greater for signal <emO[31]_GND_2_o_LessThan_133_o> created at line 82
+    Found 5-bit comparator equal for signal <GND_2_o_GND_2_o_not_equal_82_o> created at line 82
+    Found 6-bit comparator greater for signal <GND_2_o_ieO[31]_LessThan_135_o> created at line 83
+    Found 6-bit comparator greater for signal <ieO[31]_GND_2_o_LessThan_136_o> created at line 83
+    Found 5-bit comparator equal for signal <ieO[4]_mwO[14]_equal_166_o> created at line 92
+    Found 5-bit comparator equal for signal <ieO[4]_mwO[4]_equal_170_o> created at line 93
+    Found 5-bit comparator equal for signal <ieO[4]_emO[14]_equal_182_o> created at line 97
+    Found 5-bit comparator equal for signal <GND_2_o_GND_2_o_not_equal_84_o> created at line 98
+    Found 6-bit comparator greater for signal <GND_2_o_ieO[31]_LessThan_196_o> created at line 102
+    Found 6-bit comparator greater for signal <ieO[31]_GND_2_o_LessThan_197_o> created at line 102
+    Summary:
+	inferred  23 Comparator(s).
+	inferred  14 Multiplexer(s).
+Unit <ControlUnit> synthesized.
+
+Synthesizing Unit <PC>.
+    Related source file is "E:\newcpu3.0\PC.v".
+    Found 32-bit register for signal <PC>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <PC> synthesized.
+
+Synthesizing Unit <Mux4_32>.
+    Related source file is "E:\newcpu3.0\Mux4_32.v".
+    Found 32-bit 4-to-1 multiplexer for signal <y> created at line 29.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Mux4_32> synthesized.
+
+Synthesizing Unit <IP_ROM>.
+    Related source file is "E:\newcpu3.0\IP_ROM.v".
+WARNING:Xst:647 - Input <PC<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PC<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 64x32-bit Read Only RAM for signal <Inst>
+    Summary:
+	inferred   1 RAM(s).
+Unit <IP_ROM> synthesized.
+
+Synthesizing Unit <ifid>.
+    Related source file is "E:\newcpu3.0\ifid.v".
+    Found 32-bit register for signal <forBJ>.
+    Found 32-bit register for signal <iiO>.
+    Summary:
+	inferred  64 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <ifid> synthesized.
+
+Synthesizing Unit <Reg>.
+    Related source file is "E:\newcpu3.0\Reg.v".
+WARNING:Xst:647 - Input <a1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 992-bit register for signal <n0048>.
+    Found 32-bit 31-to-1 multiplexer for signal <Rna[4]_Register[31][31]_wide_mux_1_OUT> created at line 30.
+    Found 32-bit 31-to-1 multiplexer for signal <Rnb[4]_Register[31][31]_wide_mux_4_OUT> created at line 31.
+    Summary:
+	inferred 992 D-type flip-flop(s).
+	inferred  35 Multiplexer(s).
+Unit <Reg> synthesized.
+
+Synthesizing Unit <Mux4_5>.
+    Related source file is "E:\newcpu3.0\Mux2_5.v".
+    Found 5-bit 4-to-1 multiplexer for signal <y> created at line 29.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Mux4_5> synthesized.
+
+Synthesizing Unit <forS>.
+    Related source file is "E:\newcpu3.0\forS.v".
+    Summary:
+	no macro.
+Unit <forS> synthesized.
+
+Synthesizing Unit <Extender>.
+    Related source file is "E:\newcpu3.0\Extender.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Extender> synthesized.
+
+Synthesizing Unit <forJ>.
+    Related source file is "E:\newcpu3.0\forJ.v".
+WARNING:Xst:647 - Input <npc<27:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <forJ> synthesized.
+
+Synthesizing Unit <idexe>.
+    Related source file is "E:\newcpu3.0\idexe.v".
+    Found 32-bit register for signal <ta30>.
+    Found 32-bit register for signal <ta40>.
+    Found 32-bit register for signal <ta41>.
+    Found 32-bit register for signal <ta31>.
+    Found 32-bit register for signal <tfB>.
+    Found 32-bit register for signal <ieO>.
+    Summary:
+	inferred 192 D-type flip-flop(s).
+	inferred   6 Multiplexer(s).
+Unit <idexe> synthesized.
+
+Synthesizing Unit <ALU>.
+    Related source file is "E:\newcpu3.0\ALU.v".
+    Found 32-bit subtractor for signal <a[31]_b[31]_sub_5_OUT> created at line 31.
+    Found 32-bit subtractor for signal <b[31]_unary_minus_13_OUT> created at line 35.
+    Found 32-bit subtractor for signal <PWR_14_o_b[31]_sub_17_OUT> created at line 35.
+    Found 32-bit adder for signal <a[31]_b[31]_add_2_OUT> created at line 30.
+    Found 6-bit adder for signal <n0055> created at line 37.
+    Found 32-bit shifter logical left for signal <GND_13_o_BUS_0005_shift_left_27_OUT> created at line 37
+    Found 32x32-bit multiplier for signal <n0046> created at line 37.
+    Found 32-bit 8-to-1 multiplexer for signal <r> created at line 25.
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred  15 Multiplexer(s).
+	inferred   1 Combinational logic shifter(s).
+Unit <ALU> synthesized.
+
+Synthesizing Unit <div_32u_32u>.
+    Related source file is "".
+    Found 64-bit adder for signal <n3436> created at line 0.
+    Found 64-bit adder for signal <GND_16_o_b[31]_add_1_OUT> created at line 0.
+    Found 63-bit adder for signal <n3440> created at line 0.
+    Found 63-bit adder for signal <GND_16_o_b[31]_add_3_OUT> created at line 0.
+    Found 62-bit adder for signal <n3444> created at line 0.
+    Found 62-bit adder for signal <GND_16_o_b[31]_add_5_OUT> created at line 0.
+    Found 61-bit adder for signal <n3448> created at line 0.
+    Found 61-bit adder for signal <GND_16_o_b[31]_add_7_OUT> created at line 0.
+    Found 60-bit adder for signal <n3452> created at line 0.
+    Found 60-bit adder for signal <GND_16_o_b[31]_add_9_OUT> created at line 0.
+    Found 59-bit adder for signal <n3456> created at line 0.
+    Found 59-bit adder for signal <GND_16_o_b[31]_add_11_OUT> created at line 0.
+    Found 58-bit adder for signal <n3460> created at line 0.
+    Found 58-bit adder for signal <GND_16_o_b[31]_add_13_OUT> created at line 0.
+    Found 57-bit adder for signal <n3464> created at line 0.
+    Found 57-bit adder for signal <GND_16_o_b[31]_add_15_OUT> created at line 0.
+    Found 56-bit adder for signal <n3468> created at line 0.
+    Found 56-bit adder for signal <GND_16_o_b[31]_add_17_OUT> created at line 0.
+    Found 55-bit adder for signal <n3472> created at line 0.
+    Found 55-bit adder for signal <GND_16_o_b[31]_add_19_OUT> created at line 0.
+    Found 54-bit adder for signal <n3476> created at line 0.
+    Found 54-bit adder for signal <GND_16_o_b[31]_add_21_OUT> created at line 0.
+    Found 53-bit adder for signal <n3480> created at line 0.
+    Found 53-bit adder for signal <GND_16_o_b[31]_add_23_OUT> created at line 0.
+    Found 52-bit adder for signal <n3484> created at line 0.
+    Found 52-bit adder for signal <GND_16_o_b[31]_add_25_OUT> created at line 0.
+    Found 51-bit adder for signal <n3488> created at line 0.
+    Found 51-bit adder for signal <GND_16_o_b[31]_add_27_OUT> created at line 0.
+    Found 50-bit adder for signal <n3492> created at line 0.
+    Found 50-bit adder for signal <GND_16_o_b[31]_add_29_OUT> created at line 0.
+    Found 49-bit adder for signal <n3496> created at line 0.
+    Found 49-bit adder for signal <GND_16_o_b[31]_add_31_OUT> created at line 0.
+    Found 48-bit adder for signal <n3500> created at line 0.
+    Found 48-bit adder for signal <GND_16_o_b[31]_add_33_OUT> created at line 0.
+    Found 47-bit adder for signal <n3504> created at line 0.
+    Found 47-bit adder for signal <GND_16_o_b[31]_add_35_OUT> created at line 0.
+    Found 46-bit adder for signal <n3508> created at line 0.
+    Found 46-bit adder for signal <GND_16_o_b[31]_add_37_OUT> created at line 0.
+    Found 45-bit adder for signal <n3512> created at line 0.
+    Found 45-bit adder for signal <GND_16_o_b[31]_add_39_OUT> created at line 0.
+    Found 44-bit adder for signal <n3516> created at line 0.
+    Found 44-bit adder for signal <GND_16_o_b[31]_add_41_OUT> created at line 0.
+    Found 43-bit adder for signal <n3520> created at line 0.
+    Found 43-bit adder for signal <GND_16_o_b[31]_add_43_OUT> created at line 0.
+    Found 42-bit adder for signal <n3524> created at line 0.
+    Found 42-bit adder for signal <GND_16_o_b[31]_add_45_OUT> created at line 0.
+    Found 41-bit adder for signal <n3528> created at line 0.
+    Found 41-bit adder for signal <GND_16_o_b[31]_add_47_OUT> created at line 0.
+    Found 40-bit adder for signal <n3532> created at line 0.
+    Found 40-bit adder for signal <GND_16_o_b[31]_add_49_OUT> created at line 0.
+    Found 39-bit adder for signal <n3536> created at line 0.
+    Found 39-bit adder for signal <GND_16_o_b[31]_add_51_OUT> created at line 0.
+    Found 38-bit adder for signal <n3540> created at line 0.
+    Found 38-bit adder for signal <GND_16_o_b[31]_add_53_OUT> created at line 0.
+    Found 37-bit adder for signal <n3544> created at line 0.
+    Found 37-bit adder for signal <GND_16_o_b[31]_add_55_OUT> created at line 0.
+    Found 36-bit adder for signal <n3548> created at line 0.
+    Found 36-bit adder for signal <GND_16_o_b[31]_add_57_OUT> created at line 0.
+    Found 35-bit adder for signal <n3552> created at line 0.
+    Found 35-bit adder for signal <GND_16_o_b[31]_add_59_OUT> created at line 0.
+    Found 34-bit adder for signal <n3556> created at line 0.
+    Found 34-bit adder for signal <GND_16_o_b[31]_add_61_OUT> created at line 0.
+    Found 33-bit adder for signal <n3560> created at line 0.
+    Found 33-bit adder for signal <GND_16_o_b[31]_add_63_OUT> created at line 0.
+    Found 64-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 63-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 62-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 61-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 60-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 59-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 58-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 57-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 56-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 55-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 54-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 53-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 52-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 51-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 50-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 49-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 48-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Found 47-bit comparator lessequal for signal <BUS_0018> created at line 0
+    Found 46-bit comparator lessequal for signal <BUS_0019> created at line 0
+    Found 45-bit comparator lessequal for signal <BUS_0020> created at line 0
+    Found 44-bit comparator lessequal for signal <BUS_0021> created at line 0
+    Found 43-bit comparator lessequal for signal <BUS_0022> created at line 0
+    Found 42-bit comparator lessequal for signal <BUS_0023> created at line 0
+    Found 41-bit comparator lessequal for signal <BUS_0024> created at line 0
+    Found 40-bit comparator lessequal for signal <BUS_0025> created at line 0
+    Found 39-bit comparator lessequal for signal <BUS_0026> created at line 0
+    Found 38-bit comparator lessequal for signal <BUS_0027> created at line 0
+    Found 37-bit comparator lessequal for signal <BUS_0028> created at line 0
+    Found 36-bit comparator lessequal for signal <BUS_0029> created at line 0
+    Found 35-bit comparator lessequal for signal <BUS_0030> created at line 0
+    Found 34-bit comparator lessequal for signal <BUS_0031> created at line 0
+    Found 33-bit comparator lessequal for signal <BUS_0032> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0033> created at line 0
+    Summary:
+	inferred  64 Adder/Subtractor(s).
+	inferred  33 Comparator(s).
+	inferred 993 Multiplexer(s).
+Unit <div_32u_32u> synthesized.
+
+Synthesizing Unit <forBranch>.
+    Related source file is "E:\newcpu3.0\forBranch.v".
+WARNING:Xst:647 - Input <branch<31:30>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit adder for signal <forbranchR> created at line 26.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <forBranch> synthesized.
+
+Synthesizing Unit <exemem>.
+    Related source file is "E:\newcpu3.0\exemem.v".
+    Found 1-bit register for signal <tCU>.
+    Found 32-bit register for signal <tDM>.
+    Found 32-bit register for signal <ta6>.
+    Found 32-bit register for signal <mema9R>.
+    Found 32-bit register for signal <emO>.
+    Summary:
+	inferred 129 D-type flip-flop(s).
+Unit <exemem> synthesized.
+
+Synthesizing Unit <IP_RAM>.
+    Related source file is "E:\newcpu3.0\IP_RAM.v".
+WARNING:Xst:647 - Input <ALUR<31:7>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32x32-bit dual-port RAM <Mram_ram> for signal <ram>.
+    Summary:
+	inferred   1 RAM(s).
+Unit <IP_RAM> synthesized.
+
+Synthesizing Unit <memwb>.
+    Related source file is "E:\newcpu3.0\memwb.v".
+    Found 32-bit register for signal <ta81>.
+    Found 32-bit register for signal <ta82>.
+    Found 32-bit register for signal <mwO>.
+    Summary:
+	inferred  96 D-type flip-flop(s).
+Unit <memwb> synthesized.
+
+Synthesizing Unit <Mux2_32>.
+    Related source file is "E:\newcpu3.0\Mux2_32.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Mux2_32> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 32x32-bit dual-port RAM                               : 1
+ 64x32-bit single-port Read Only RAM                   : 1
+# Multipliers                                          : 1
+ 32x32-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 133
+ 32-bit adder                                          : 2
+ 32-bit addsub                                         : 1
+ 32-bit subtractor                                     : 1
+ 33-bit adder                                          : 4
+ 34-bit adder                                          : 4
+ 35-bit adder                                          : 4
+ 36-bit adder                                          : 4
+ 37-bit adder                                          : 4
+ 38-bit adder                                          : 4
+ 39-bit adder                                          : 4
+ 40-bit adder                                          : 4
+ 41-bit adder                                          : 4
+ 42-bit adder                                          : 4
+ 43-bit adder                                          : 4
+ 44-bit adder                                          : 4
+ 45-bit adder                                          : 4
+ 46-bit adder                                          : 4
+ 47-bit adder                                          : 4
+ 48-bit adder                                          : 4
+ 49-bit adder                                          : 4
+ 50-bit adder                                          : 4
+ 51-bit adder                                          : 4
+ 52-bit adder                                          : 4
+ 53-bit adder                                          : 4
+ 54-bit adder                                          : 4
+ 55-bit adder                                          : 4
+ 56-bit adder                                          : 4
+ 57-bit adder                                          : 4
+ 58-bit adder                                          : 4
+ 59-bit adder                                          : 4
+ 6-bit adder                                           : 1
+ 60-bit adder                                          : 4
+ 61-bit adder                                          : 4
+ 62-bit adder                                          : 4
+ 63-bit adder                                          : 4
+ 64-bit adder                                          : 4
+# Registers                                            : 18
+ 1-bit register                                        : 1
+ 32-bit register                                       : 16
+ 992-bit register                                      : 1
+# Comparators                                          : 89
+ 32-bit comparator lessequal                           : 2
+ 33-bit comparator lessequal                           : 2
+ 34-bit comparator lessequal                           : 2
+ 35-bit comparator lessequal                           : 2
+ 36-bit comparator lessequal                           : 2
+ 37-bit comparator lessequal                           : 2
+ 38-bit comparator lessequal                           : 2
+ 39-bit comparator lessequal                           : 2
+ 40-bit comparator lessequal                           : 2
+ 41-bit comparator lessequal                           : 2
+ 42-bit comparator lessequal                           : 2
+ 43-bit comparator lessequal                           : 2
+ 44-bit comparator lessequal                           : 2
+ 45-bit comparator lessequal                           : 2
+ 46-bit comparator lessequal                           : 2
+ 47-bit comparator lessequal                           : 2
+ 48-bit comparator lessequal                           : 2
+ 49-bit comparator lessequal                           : 2
+ 5-bit comparator equal                                : 8
+ 50-bit comparator lessequal                           : 2
+ 51-bit comparator lessequal                           : 2
+ 52-bit comparator lessequal                           : 2
+ 53-bit comparator lessequal                           : 2
+ 54-bit comparator lessequal                           : 2
+ 55-bit comparator lessequal                           : 2
+ 56-bit comparator lessequal                           : 2
+ 57-bit comparator lessequal                           : 2
+ 58-bit comparator lessequal                           : 2
+ 59-bit comparator lessequal                           : 2
+ 6-bit comparator greater                              : 15
+ 60-bit comparator lessequal                           : 2
+ 61-bit comparator lessequal                           : 2
+ 62-bit comparator lessequal                           : 2
+ 63-bit comparator lessequal                           : 2
+ 64-bit comparator lessequal                           : 2
+# Multiplexers                                         : 2065
+ 1-bit 2-to-1 multiplexer                              : 1987
+ 32-bit 2-to-1 multiplexer                             : 71
+ 32-bit 31-to-1 multiplexer                            : 2
+ 32-bit 4-to-1 multiplexer                             : 4
+ 5-bit 4-to-1 multiplexer                              : 1
+# Logic shifters                                       : 1
+ 32-bit shifter logical left                           : 1
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2677 - Node <ieO_15> of sequential type is unconnected in block <IDandEXE>.
+WARNING:Xst:2677 - Node <ieO_16> of sequential type is unconnected in block <IDandEXE>.
+WARNING:Xst:2677 - Node <ieO_17> of sequential type is unconnected in block <IDandEXE>.
+WARNING:Xst:2677 - Node <ieO_18> of sequential type is unconnected in block <IDandEXE>.
+WARNING:Xst:2677 - Node <ieO_19> of sequential type is unconnected in block <IDandEXE>.
+WARNING:Xst:2677 - Node <ieO_23> of sequential type is unconnected in block <IDandEXE>.
+WARNING:Xst:2677 - Node <ieO_24> of sequential type is unconnected in block <IDandEXE>.
+WARNING:Xst:2677 - Node <ieO_25> of sequential type is unconnected in block <IDandEXE>.
+WARNING:Xst:2677 - Node <emO_5> of sequential type is unconnected in block <EXEandMEM>.
+WARNING:Xst:2677 - Node <emO_6> of sequential type is unconnected in block <EXEandMEM>.
+WARNING:Xst:2677 - Node <emO_7> of sequential type is unconnected in block <EXEandMEM>.
+WARNING:Xst:2677 - Node <emO_8> of sequential type is unconnected in block <EXEandMEM>.
+WARNING:Xst:2677 - Node <emO_9> of sequential type is unconnected in block <EXEandMEM>.
+WARNING:Xst:2677 - Node <emO_15> of sequential type is unconnected in block <EXEandMEM>.
+WARNING:Xst:2677 - Node <emO_16> of sequential type is unconnected in block <EXEandMEM>.
+WARNING:Xst:2677 - Node <emO_17> of sequential type is unconnected in block <EXEandMEM>.
+WARNING:Xst:2677 - Node <emO_18> of sequential type is unconnected in block <EXEandMEM>.
+WARNING:Xst:2677 - Node <emO_19> of sequential type is unconnected in block <EXEandMEM>.
+WARNING:Xst:2677 - Node <emO_20> of sequential type is unconnected in block <EXEandMEM>.
+WARNING:Xst:2677 - Node <emO_21> of sequential type is unconnected in block <EXEandMEM>.
+WARNING:Xst:2677 - Node <emO_22> of sequential type is unconnected in block <EXEandMEM>.
+WARNING:Xst:2677 - Node <emO_23> of sequential type is unconnected in block <EXEandMEM>.
+WARNING:Xst:2677 - Node <emO_24> of sequential type is unconnected in block <EXEandMEM>.
+WARNING:Xst:2677 - Node <emO_25> of sequential type is unconnected in block <EXEandMEM>.
+WARNING:Xst:2677 - Node <mwO_5> of sequential type is unconnected in block <MEMandWB>.
+WARNING:Xst:2677 - Node <mwO_6> of sequential type is unconnected in block <MEMandWB>.
+WARNING:Xst:2677 - Node <mwO_7> of sequential type is unconnected in block <MEMandWB>.
+WARNING:Xst:2677 - Node <mwO_8> of sequential type is unconnected in block <MEMandWB>.
+WARNING:Xst:2677 - Node <mwO_9> of sequential type is unconnected in block <MEMandWB>.
+WARNING:Xst:2677 - Node <mwO_15> of sequential type is unconnected in block <MEMandWB>.
+WARNING:Xst:2677 - Node <mwO_16> of sequential type is unconnected in block <MEMandWB>.
+WARNING:Xst:2677 - Node <mwO_17> of sequential type is unconnected in block <MEMandWB>.
+WARNING:Xst:2677 - Node <mwO_18> of sequential type is unconnected in block <MEMandWB>.
+WARNING:Xst:2677 - Node <mwO_19> of sequential type is unconnected in block <MEMandWB>.
+WARNING:Xst:2677 - Node <mwO_20> of sequential type is unconnected in block <MEMandWB>.
+WARNING:Xst:2677 - Node <mwO_21> of sequential type is unconnected in block <MEMandWB>.
+WARNING:Xst:2677 - Node <mwO_22> of sequential type is unconnected in block <MEMandWB>.
+WARNING:Xst:2677 - Node <mwO_23> of sequential type is unconnected in block <MEMandWB>.
+WARNING:Xst:2677 - Node <mwO_24> of sequential type is unconnected in block <MEMandWB>.
+WARNING:Xst:2677 - Node <mwO_25> of sequential type is unconnected in block <MEMandWB>.
+
+Synthesizing (advanced) Unit <IP_RAM>.
+INFO:Xst:3217 - HDL ADVISOR - Register <ta82> currently described with an asynchronous reset, could be combined with distributed RAM <Mram_ram> for implementation on block RAM resources if you made this reset synchronous instead.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <a7>            | high     |
+    |     addrA          | connected to signal <ALUR<4:0>>     |          |
+    |     diA            | connected to signal <DataI>         |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     addrB          | connected to signal <ALUR<6:2>>     |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_ram> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+Unit <IP_RAM> synthesized (advanced).
+
+Synthesizing (advanced) Unit <IP_ROM>.
+INFO:Xst:3231 - The small RAM <Mram_Inst> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 32-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <PC>            |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <Inst>          |          |
+    -----------------------------------------------------------------------
+Unit <IP_ROM> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 32x32-bit dual-port distributed RAM                   : 1
+ 64x32-bit single-port distributed Read Only RAM       : 1
+# Multipliers                                          : 1
+ 32x32-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 69
+ 32-bit adder                                          : 2
+ 32-bit adder carry in                                 : 64
+ 32-bit addsub                                         : 1
+ 32-bit subtractor                                     : 1
+ 6-bit adder                                           : 1
+# Registers                                            : 1505
+ Flip-Flops                                            : 1505
+# Comparators                                          : 89
+ 32-bit comparator lessequal                           : 2
+ 33-bit comparator lessequal                           : 2
+ 34-bit comparator lessequal                           : 2
+ 35-bit comparator lessequal                           : 2
+ 36-bit comparator lessequal                           : 2
+ 37-bit comparator lessequal                           : 2
+ 38-bit comparator lessequal                           : 2
+ 39-bit comparator lessequal                           : 2
+ 40-bit comparator lessequal                           : 2
+ 41-bit comparator lessequal                           : 2
+ 42-bit comparator lessequal                           : 2
+ 43-bit comparator lessequal                           : 2
+ 44-bit comparator lessequal                           : 2
+ 45-bit comparator lessequal                           : 2
+ 46-bit comparator lessequal                           : 2
+ 47-bit comparator lessequal                           : 2
+ 48-bit comparator lessequal                           : 2
+ 49-bit comparator lessequal                           : 2
+ 5-bit comparator equal                                : 8
+ 50-bit comparator lessequal                           : 2
+ 51-bit comparator lessequal                           : 2
+ 52-bit comparator lessequal                           : 2
+ 53-bit comparator lessequal                           : 2
+ 54-bit comparator lessequal                           : 2
+ 55-bit comparator lessequal                           : 2
+ 56-bit comparator lessequal                           : 2
+ 57-bit comparator lessequal                           : 2
+ 58-bit comparator lessequal                           : 2
+ 59-bit comparator lessequal                           : 2
+ 6-bit comparator greater                              : 15
+ 60-bit comparator lessequal                           : 2
+ 61-bit comparator lessequal                           : 2
+ 62-bit comparator lessequal                           : 2
+ 63-bit comparator lessequal                           : 2
+ 64-bit comparator lessequal                           : 2
+# Multiplexers                                         : 2065
+ 1-bit 2-to-1 multiplexer                              : 1987
+ 32-bit 2-to-1 multiplexer                             : 71
+ 32-bit 31-to-1 multiplexer                            : 2
+ 32-bit 4-to-1 multiplexer                             : 4
+ 5-bit 4-to-1 multiplexer                              : 1
+# Logic shifters                                       : 1
+ 32-bit shifter logical left                           : 1
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+ERROR:Xst:528 - Multi-source in Unit <CPU> on signal <PC<31>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <PC<31>>
+   Output signal of FDC instance <PC01/PC_31>
+
+ERROR:Xst:528 - Multi-source in Unit <CPU> on signal <PC<30>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <PC<30>>
+   Output signal of FDC instance <PC01/PC_30>
+
+ERROR:Xst:528 - Multi-source in Unit <CPU> on signal <PC<29>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <PC<29>>
+   Output signal of FDC instance <PC01/PC_29>
+
+ERROR:Xst:528 - Multi-source in Unit <CPU> on signal <PC<28>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <PC<28>>
+   Output signal of FDC instance <PC01/PC_28>
+
+ERROR:Xst:528 - Multi-source in Unit <CPU> on signal <PC<27>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <PC<27>>
+   Output signal of FDC instance <PC01/PC_27>
+
+ERROR:Xst:528 - Multi-source in Unit <CPU> on signal <PC<26>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <PC<26>>
+   Output signal of FDC instance <PC01/PC_26>
+
+ERROR:Xst:528 - Multi-source in Unit <CPU> on signal <PC<25>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <PC<25>>
+   Output signal of FDC instance <PC01/PC_25>
+
+ERROR:Xst:528 - Multi-source in Unit <CPU> on signal <PC<24>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <PC<24>>
+   Output signal of FDC instance <PC01/PC_24>
+
+ERROR:Xst:528 - Multi-source in Unit <CPU> on signal <PC<23>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <PC<23>>
+   Output signal of FDC instance <PC01/PC_23>
+
+ERROR:Xst:528 - Multi-source in Unit <CPU> on signal <PC<22>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <PC<22>>
+   Output signal of FDC instance <PC01/PC_22>
+
+ERROR:Xst:528 - Multi-source in Unit <CPU> on signal <PC<21>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <PC<21>>
+   Output signal of FDC instance <PC01/PC_21>
+
+ERROR:Xst:528 - Multi-source in Unit <CPU> on signal <PC<20>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <PC<20>>
+   Output signal of FDC instance <PC01/PC_20>
+
+ERROR:Xst:528 - Multi-source in Unit <CPU> on signal <PC<19>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <PC<19>>
+   Output signal of FDC instance <PC01/PC_19>
+
+ERROR:Xst:528 - Multi-source in Unit <CPU> on signal <PC<18>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <PC<18>>
+   Output signal of FDC instance <PC01/PC_18>
+
+ERROR:Xst:528 - Multi-source in Unit <CPU> on signal <PC<17>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <PC<17>>
+   Output signal of FDC instance <PC01/PC_17>
+
+ERROR:Xst:528 - Multi-source in Unit <CPU> on signal <PC<16>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <PC<16>>
+   Output signal of FDC instance <PC01/PC_16>
+
+ERROR:Xst:528 - Multi-source in Unit <CPU> on signal <PC<15>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <PC<15>>
+   Output signal of FDC instance <PC01/PC_15>
+
+ERROR:Xst:528 - Multi-source in Unit <CPU> on signal <PC<14>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <PC<14>>
+   Output signal of FDC instance <PC01/PC_14>
+
+ERROR:Xst:528 - Multi-source in Unit <CPU> on signal <PC<13>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <PC<13>>
+   Output signal of FDC instance <PC01/PC_13>
+
+ERROR:Xst:528 - Multi-source in Unit <CPU> on signal <PC<12>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <PC<12>>
+   Output signal of FDC instance <PC01/PC_12>
+
+ERROR:Xst:528 - Multi-source in Unit <CPU> on signal <PC<11>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <PC<11>>
+   Output signal of FDC instance <PC01/PC_11>
+
+ERROR:Xst:528 - Multi-source in Unit <CPU> on signal <PC<10>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <PC<10>>
+   Output signal of FDC instance <PC01/PC_10>
+
+ERROR:Xst:528 - Multi-source in Unit <CPU> on signal <PC<9>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <PC<9>>
+   Output signal of FDC instance <PC01/PC_9>
+
+ERROR:Xst:528 - Multi-source in Unit <CPU> on signal <PC<8>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <PC<8>>
+   Output signal of FDC instance <PC01/PC_8>
+
+ERROR:Xst:528 - Multi-source in Unit <CPU> on signal <PC<7>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <PC<7>>
+   Output signal of FDC instance <PC01/PC_7>
+
+ERROR:Xst:528 - Multi-source in Unit <CPU> on signal <PC<6>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <PC<6>>
+   Output signal of FDC instance <PC01/PC_6>
+
+ERROR:Xst:528 - Multi-source in Unit <CPU> on signal <PC<5>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <PC<5>>
+   Output signal of FDC instance <PC01/PC_5>
+
+ERROR:Xst:528 - Multi-source in Unit <CPU> on signal <PC<4>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <PC<4>>
+   Output signal of FDC instance <PC01/PC_4>
+
+ERROR:Xst:528 - Multi-source in Unit <CPU> on signal <PC<3>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <PC<3>>
+   Output signal of FDC instance <PC01/PC_3>
+
+ERROR:Xst:528 - Multi-source in Unit <CPU> on signal <PC<2>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <PC<2>>
+   Output signal of FDC instance <PC01/PC_2>
+
+ERROR:Xst:528 - Multi-source in Unit <CPU> on signal <PC<1>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <PC<1>>
+   Output signal of FDC instance <PC01/PC_1>
+
+ERROR:Xst:528 - Multi-source in Unit <CPU> on signal <PC<0>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <PC<0>>
+   Output signal of FDC instance <PC01/PC_0>
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 10.28 secs
+ 
+--> 
+
+Total memory usage is 316780 kilobytes
+
+Number of errors   :   32 (   0 filtered)
+Number of warnings :   66 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+
