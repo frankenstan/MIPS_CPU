@@ -1,2 +1,4 @@
 # MIPS_CPU
-Simplified MIPS CPU Written in Verilog
+Simplified MIPS CPU written in Verilog.
+
+Tested and compiled in Xilinx.
